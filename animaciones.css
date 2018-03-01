@@ -1,0 +1,47 @@
+/* CSS Document */
+/*
+/
+/
+/
+/Animaciones
+*/
+@keyframes psychodelia
+	{
+		0% {
+			filter:hue-rotate(0deg);
+			-webkit-filter: filter:hue-rotate(0deg);
+			-moz-filter: filter:hue-rotate(0deg);
+			-o-filter: filter:hue-rotate(0deg);
+			-ms-filter: filter:hue-rotate(0deg);
+		}
+		50% {
+			filter:hue-rotate(360deg);
+			-webkit-filter: filter:hue-rotate(360deg);
+			-moz-filter: filter:hue-rotate(360deg);
+			-o-filter: filter:hue-rotate(360deg);
+			-ms-filter: filter:hue-rotate(360deg);
+		}
+		100% {
+			filter:hue-rotate(0deg);
+			-webkit-filter: filter:hue-rotate(0deg);
+			-moz-filter: filter:hue-rotate(0deg);
+			-o-filter: filter:hue-rotate(0deg);
+			-ms-filter: filter:hue-rotate(0deg);
+		}
+	}
+#redesSociales img:hover
+	{
+		animation-name: psychodelia;
+		animation-duration: 1s;
+		-webkit-animation-delay: 0s;
+		-moz-animation-delay: 0s;
+		-o-animation-delay: 0s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+  	animation-direction: alternate
+	}
+/*
+//
+//
+//
+//

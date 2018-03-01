@@ -7,55 +7,64 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--vínculo al CSS de Simio!-->
     <link rel="stylesheet" href="css/simio.css">
+    <link rel="stylesheet" href="css/animaciones.css">
     <title>SIMIO</title>
   </head>
   <body>
     <!-- Comienza el encabezado !-->
-    <header class="container fixed-top">
-      <div class="d-flex justify-content-start" id="encabezado">
-        <div class="p-2"><img src="img/simio_logo.png" id="simio_logo"></div>
-        <div class="ml-auto mt-auto p-2"><img src="img/facebook.png"><img src="img/linkedin.jpg"><img src="img/twitter.png"></div>
+    <header class="container fixed-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="d-flex justify-content-start" id="encabezado" >
+        <div class="p-2" id="logotipo"><img src="img/simio_logo.png" id="simio_logo"></div>
+        <!-- Divide columnas -->
+        <div class="ml-auto mt-auto p-2" id="redesSociales">
+          <a href="https://www.facebook.com/simiorockband/" target="_blank"><img src="img/facebook.png" alt="Síguenos en Facebook"></a>
+          <a href="https://www.facebook.com/ratasdecoyoacan/" target="_blank"><img src="img/linkedin.jpg" alt="Síguenos en LinkedIn"></a>
+          <a href="https://www.linkedin.com/in/jorge-garc%C3%ADa-zavaleta-36632a35/" target="_blank"><img src="img/twitter.png" alt="Síguenos en Twitter"></a>
+        </div>
       </div>
+      <!-- Comienza navegación -->
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar links -->
+        <!-- Vinculos navegación -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Así empezó todo</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Dropdown link
+                Canciones
               </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+              <div class="dropdown-menu" id="canciones">
+                <a class="dropdown-item" href="#">Simio</a>
+                <a class="dropdown-item" href="#">Horizonte equivocado</a>
+                <a class="dropdown-item" href="#">Retrato de un país</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Fotos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conciertos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fan Club</a>
             </li>
           </ul>
         </div>
       </nav>
-
-
-
     </header>
     <!-- Termina el encabezado !-->
 
     <!-- Comienza sección !-->
-    <section>
-
+    <section class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div>a ver, que chingados</div>
     </section>
     <!-- Termina sección !-->
 
