@@ -1,3 +1,6 @@
+.comentarios{
+    text-align: right;
+  }
 .margenTop{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -23,16 +26,21 @@
 #colContenido{
   background-color: #4a148c;
   background-image: url(../img/sim-jor.png);
+  background-repeat: no-repeat;
+  background-position: left top;
   color: white;
 }
-#colContFot{
+#colContFot1, #colContFot2{
   text-align: center;
 }
-#colContFot img{
+#colContFot1 img, #colContFot2 img{
   width: 100%;
 }
-#colContFot, #colContTxt{
+#colContFot1, #colContTxt1, #colContFot2, #colContTxt2{
   margin-bottom: 15px;
+}
+#cmnt1{
+  width: 100%;
 }
 #contenido{
   margin: 0 auto;
@@ -117,6 +125,9 @@ queries
 /
 /
 */
+#listadoBusqueda{
+  display: none;
+}
   body{
     font-size: 14px;
   }
@@ -134,4 +145,23 @@ queries
   section{
     margin-top: 120px;
   }
+  /*
+  /
+  /
+  /
+  flex
+  */
+  #colContFot2, #colContTxt2{
+    flex: 1 1 auto;
+  }
+  #colContFot2
+    {
+      order: 2;
+      flexgrow:1;
+    }
+  #colContFot1
+    {
+      order: 1;
+      flexgrow:1;
+    }
 }

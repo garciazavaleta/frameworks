@@ -8,11 +8,12 @@
     <!--vínculo al CSS de Simio!-->
     <link rel="stylesheet" href="css/simio.css">
     <link rel="stylesheet" href="css/animaciones.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>SIMIO</title>
   </head>
   <body>
     <!-- Comienza el encabezado !-->
-    <header class="container fixed-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <header class="container fixed-top col-lg-12 col-md-12 col-sm-12 col-12">
       <div class="d-flex justify-content-start" id="encabezado">
         <div class="p-2" id="logotipo"><img src="img/simio_logo.png" id="simio_logo"></div>
         <!-- Divide columnas -->
@@ -63,24 +64,52 @@
     <!-- Termina el encabezado !-->
 
     <!-- Comienza sección !-->
-    <section class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <section class="container col-lg-12 col-md-12 col-sm-12 col-12">
       <article>
         <div class="row" id="contenido" class="contenedores">
           <!--
             Columna izquierda
           -->
-          <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12 bloque1" id="colContenido">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-12 bloque1" id="colContenido">
             <div class="row margenTop">
-              <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id="colContTxt">
+              <div class="col-lg-7 col-md-7 col-sm-6 col-12" id="colContTxt1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis laoreet ligula, ac mollis mi ornare id. Aenean nisi neque, hendrerit vitae posuere sed, facilisis sit amet dui. Nam sed dui ornare, condimentum lacus vel, aliquet neque. Praesent aliquam posuere libero a bibendum. Mauris sagittis, lorem eu scelerisque auctor, tortor nulla consequat metus, placerat efficitur eros lectus eu erat. Aliquam leo risus, pharetra vel lacus sed, rhoncus maximus nibh. Quisque ultricies malesuada semper. Mauris vitae venenatis lacus, ac commodo tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
               </div>
-              <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" id="colContFot">
+              <div class="col-lg-5 col-md-5 col-sm-6 col-12" id="colContFot1">
                 <img src="img/simios.jpg">
               </div>
-              <div class="col-lg-12 form-group">
-                <label for="comment">Comentarios:</label>
-                <i class="icon-search"></i>
-                <textarea class="form-control" rows="1" id="comment"></textarea>
+            </div>
+            <!--
+            text-area comentarios
+          -->
+            <div class="form-row margenTop">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 comentarios">
+                <i class="material-icons">chat_bubble_outline</i>
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-11">
+                <input type="text-area" class="form-control form-control-sm" id="cmnt1" placeholder="Escriba sus comentarios">
+              </div>
+            </div>
+            <!--
+              división columnas
+            -->
+            <div class="row margenTop">
+              <div class="col-lg-5 col-md-5 col-sm-6 col-12" id="colContFot2">
+                <img src="img/simios2.jpg">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-6 col-12" id="colContTxt2">
+                Aliquam porta orci sed accumsan cursus. Donec fringilla posuere felis, sed dignissim arcu placerat vitae. Mauris aliquet mi ac odio finibus, pharetra fringilla mauris lobortis. Proin lacinia tincidunt diam, in commodo lorem volutpat non. Suspendisse iaculis metus a nunc aliquet, placerat maximus mi lacinia. Morbi tincidunt nibh eu eros sollicitudin ullamcorper. Nam ornare tristique sollicitudin. Vivamus eget pellentesque neque, sed scelerisque diam. Vivamus quis eleifend ante. Curabitur hendrerit lobortis metus ac vulputate. Proin id consequat leo. Fusce urna arcu, euismod non mollis in, consequat in enim. Pellentesque in fringilla est.
+              </div>
+            </div>
+            <!--
+              text-area comentarios
+            -->
+            <div class="form-row margenTop">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 comentarios">
+                <i class="material-icons">chat_bubble_outline</i>
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-11">
+                <input type="text-area" class="form-control form-control-sm" id="cmnt1" placeholder="Escriba sus comentarios">
               </div>
             </div>
           </div>
@@ -88,8 +117,33 @@
           Columna derecha
           -->
           <div class="col-lg-4 col-md-4 bloque2" id="colBusqueda">
-            <div class="row margenTop">
-              pasa
+            <div class="form-row margenTop" id="campoBusqueda">
+              <!--
+              opción de búsqueda
+              -->
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 comentarios">
+                <i class="material-icons">search</i>
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-11">
+                <input type="text-area" class="form-control form-control-sm" id="cmnt1" placeholder="¿Qué está buscando?">
+              </div>
+              <!--
+              termina opción de búsqueda
+              Comienza listado de opciones de búsqueda
+              -->
+            </div>
+            <div class="row" id="listadoBusqueda">
+              <div class="col-lg-12">
+                <a href="#" class="list-group-item list-group-item-action">Las influencias de Simio</a>
+                <a href="#" class="list-group-item list-group-item-action">Letras</a>
+                <a href="#" class="list-group-item list-group-item-action">Presentaciones</a>
+                <a href="#" class="list-group-item list-group-item-action">Videos</a>
+                <a href="#" class="list-group-item list-group-item-action">Últimas noticias</a>
+              </div>
+            </div>
+            <!--
+            termina listado de opciones de búsqueda
+            -->
             </div>
           </div>
         </div>
