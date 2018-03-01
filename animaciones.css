@@ -29,7 +29,7 @@
 			-ms-filter: filter:hue-rotate(0deg);
 		}
 	}
-#redesSociales img:hover
+#redesSociales img:hover, #logotipo:hover
 	{
 		animation-name: psychodelia;
 		animation-duration: 1s;

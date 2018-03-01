@@ -1,3 +1,8 @@
+.margenTop{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
 #canciones{
   background-color: grey;
 }
@@ -12,12 +17,31 @@
 #canciones a:hover{
   background-color: grey;
 }
+#colBusqueda{
+  background-color: #ccff90;
+}
+#colContenido{
+  background-color: #4a148c;
+  background-image: url(../img/sim-jor.png);
+  color: white;
+}
+#colContFot{
+  text-align: center;
+}
+#colContFot img{
+  width: 100%;
+}
+#colContFot, #colContTxt{
+  margin-bottom: 15px;
+}
+#contenido{
+  margin: 0 auto;
+}
 #encabezado{
   background-color: #4a148c;
   background-image:url("../img/banda.png");
   background-repeat: no-repeat;
   background-position: right;
-  back
 }
 #logotipo{
   margin-left: 0;
@@ -31,8 +55,10 @@
 }
 body {
   background-color: #ff6f00;
+  font-size: 12px;
+  text-align: justify;
 }
-header div, nav{
+header div, nav, section div{
   max-width: 900px;
   margin: 0 auto;
 }
@@ -45,4 +71,67 @@ nav li{
 }
 nav li:hover{
   background-color: black;
+}
+section{
+  margin-top: 110px;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+/*
+/
+/
+/
+queries
+*/
+@media screen and (max-width: 767px){
+  /*
+  /
+  /
+  /
+  Flex
+  */
+  .contenedores
+    {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  div [class*="bloque"]
+    {
+        flex: 1 1 auto;
+    }
+  .bloque1
+    {
+      order: 2;
+      flexgrow:1;
+    }
+  .bloque2
+    {
+      order: 1;
+      flexgrow:1;
+    }
+/*
+/
+/
+*/
+  body{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 580px){
+  #encabezado{
+    background-image:none;
+  }
+  body{
+    background-image:url("../img/banda.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: bottom;
+  }
+  section{
+    margin-top: 120px;
+  }
 }
